@@ -1,0 +1,34 @@
+###
+
+get http://localhost:8000/api/user?limit=10
+
+###
+
+get http://localhost:8000/api/user/1
+
+
+###
+
+post http://localhost:8000/api/user
+Content-Type: application/json
+
+{
+    "lastname": "nymaa",
+    "firstname": "bataa",
+    "email": "jjbatnym@gmail.com"
+}
+
+
+###
+
+put http://localhost:8000/api/user/1
+Content-Type: application/json
+
+{
+    "firstname": "Sainaaa",
+}
+
+
+###
+
+delete http://localhost:8000/api/user/1
